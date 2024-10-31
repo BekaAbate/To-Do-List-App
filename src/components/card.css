@@ -1,0 +1,51 @@
+.tasks-container {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", serif;
+    opacity: .7;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.tasks-container>p {
+    margin-left: .5rem;
+    margin-right: auto;
+}
+
+.tasks-container>button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #7f1e0b;
+    cursor: pointer;
+}
+
+.tasks-container>button:hover {
+    color: #FF6342;
+}
+
+.card-label {
+    border: 1px solid #cccecf;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: .6rem;
+    cursor: pointer;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+.card-status:checked+.card-label {
+    border: none;
+    background-color: #FF6342;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-status {
+    display: none;
+}
